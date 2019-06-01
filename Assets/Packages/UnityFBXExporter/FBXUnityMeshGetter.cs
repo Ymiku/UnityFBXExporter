@@ -486,9 +486,9 @@ namespace UnityFBXExporter
 				tempObjectSb.AppendLine("\t\t\t\tTypedIndex: 0");
 				tempObjectSb.AppendLine("\t\t\t}");
 				if (mesh.uv2.Length != 0) {
+                    tempObjectSb.AppendLine("\t\t}");
                     tempObjectSb.AppendLine("\t\tLayer: 1 {");
                     tempObjectSb.AppendLine("\t\t\tVersion: 100");
-                    tempObjectSb.AppendLine("\t\t}");
 					tempObjectSb.AppendLine("\t\t\tLayerElement:  {");
 					tempObjectSb.AppendLine("\t\t\t\tType: \"LayerElementUV\"");
 					tempObjectSb.AppendLine("\t\t\t\tTypedIndex: 1");
