@@ -342,8 +342,8 @@ namespace UnityFBXExporter
 				tempObjectSb.AppendLine("\t\t\t}");
 				tempObjectSb.AppendLine("\t\t}");
 
-				// -- UV 2 Creation
-				// TODO: Add UV2 Creation here
+                // -- UV 2 Creation
+                // TODO: Add UV2 Creation here
 				if (mesh.uv2.Length != 0) {
 					uvLength = mesh.uv2.Length;
 					uvs = mesh.uv2;
@@ -486,7 +486,9 @@ namespace UnityFBXExporter
 				tempObjectSb.AppendLine("\t\t\t\tTypedIndex: 0");
 				tempObjectSb.AppendLine("\t\t\t}");
 				if (mesh.uv2.Length != 0) {
-					tempObjectSb.AppendLine("\t\t}");
+                    tempObjectSb.AppendLine("\t\tLayer: 1 {");
+                    tempObjectSb.AppendLine("\t\t\tVersion: 100");
+                    tempObjectSb.AppendLine("\t\t}");
 					tempObjectSb.AppendLine("\t\t\tLayerElement:  {");
 					tempObjectSb.AppendLine("\t\t\t\tType: \"LayerElementUV\"");
 					tempObjectSb.AppendLine("\t\t\t\tTypedIndex: 1");
