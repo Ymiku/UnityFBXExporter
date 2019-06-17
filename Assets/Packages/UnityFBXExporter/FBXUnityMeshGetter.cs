@@ -342,8 +342,7 @@ namespace UnityFBXExporter
 				tempObjectSb.AppendLine("\t\t\t}");
 				tempObjectSb.AppendLine("\t\t}");
 
-                // -- UV 2 Creation
-                // TODO: Add UV2 Creation here
+                		// -- UV 2 Creation
 				if (mesh.uv2.Length != 0) {
 					uvLength = mesh.uv2.Length;
 					uvs = mesh.uv2;
