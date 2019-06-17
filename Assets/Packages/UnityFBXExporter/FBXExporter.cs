@@ -154,13 +154,13 @@ namespace UnityFBXExporter
 			System.DateTime currentDate = System.DateTime.Now;
 			sb.AppendLine("\tCreationTimeStamp:  {");
 			sb.AppendLine("\t\tVersion: 1000");
-			sb.AppendLine("\t\tYear: " + currentDate.Year);
-			sb.AppendLine("\t\tMonth: " + currentDate.Month);
-			sb.AppendLine("\t\tDay: " + currentDate.Day);
-			sb.AppendLine("\t\tHour: " + currentDate.Hour);
-			sb.AppendLine("\t\tMinute: " + currentDate.Minute);
-			sb.AppendLine("\t\tSecond: " + currentDate.Second);
-			sb.AppendLine("\t\tMillisecond: " + currentDate.Millisecond);
+			sb.AppendLine("\t\tYear: " + 0);
+			sb.AppendLine("\t\tMonth: " + 0);
+			sb.AppendLine("\t\tDay: " + 0);
+			sb.AppendLine("\t\tHour: " + 0);
+			sb.AppendLine("\t\tMinute: " + 0);
+			sb.AppendLine("\t\tSecond: " + 0);
+			sb.AppendLine("\t\tMillisecond: " + 0);
 			sb.AppendLine("\t}");
 			
 			// Info on the Creator
